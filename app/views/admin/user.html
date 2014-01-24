@@ -1,0 +1,29 @@
+<div class="backend-container"> 
+	<div id="menu_wrapper" ng-init="menu_template_src = '/views/admin/includes/menu.html'" ng-include src="menu_template_src"></div>
+	<!-- <div id="sub_menu_wrapper" ng-init="sub_menu_template_src = '/views/admin/includes/submenu.html'" ng-include src="sub_menu_template_src"  ></div> -->
+	<div class="admin-container"  >
+		<div class="right-block">
+			<span class="backend-button float-right" ng-click="toggleEditForm(null)">Add New User</span>
+			<span class="backend-button float-right" ng-show="userId" ng-click="deleteUser(userId)">Delete User</span>
+			<div ng-hide="editUser">{{status}}</div>
+			<div ng-show="editUser" ng-init="edit_form_template_src = '/views/admin/user/edit.html'" ng-include src="edit_form_template_src"  ></div>
+		</div>
+		<div class="left-block" data-ng-init="getUsers()">
+			<!-- 			<span class="backend-button"  ng-click="getUsers()">Show All Users</span> -->
+			<p><b><i>Click on user to edit it.</i></b></p>
+			<ul>
+				<li ng-repeat="(key,value) in Users">
+					<span ng-click="toggleEditForm(value._id['$oid'])">{{value.username}}</span>
+				</li>
+			</ul>
+		</div>
+		<div class="clear"></div>
+
+	</div>
+	<div class="footer">
+		@From The Neev Innovative Team.
+	</div>
+</div>
+
+
+

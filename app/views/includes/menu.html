@@ -1,0 +1,17 @@
+<div id="cssmenu"  ng-controller="AdminCategoryCtrl">
+    <ul  data-ng-init="getCategories()">
+     <li class='active'><span><a href='#'>Home</a></span></li>
+     <li class='has-sub' ng-repeat="(key,value) in getCategoryTree()">
+        <span>
+            <a href="#/category/{{value.title}}/{{value._id['$oid']}}"  >{{value.title}}</a></span>
+            <ul ng-if="value.child"><li ng-if="subkey=='child'" ng-repeat="(subkey,subvalue) in value">
+                <span ng-if="subkey=='child'">       
+                    <a href="#/category/{{subvalue.title}}/{{subvalue._id['$oid']}}">{{subvalue.title}}</a>
+                </span>
+            </li>
+        </ul>
+         <li ><span><a href='#/blog'>Blog</a></span></li>
+        <li class='last'><span><a href='#/admin'>Admin Log In</a></span></li>
+    </ul>
+</div>
+

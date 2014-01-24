@@ -1,0 +1,27 @@
+<div class="frontend-container"> 
+	<div class="header">
+		<div  ng-init="menu_template_src = '/views/includes/menu.html'" ng-include src="menu_template_src"></div>
+	</div>
+
+	<div data-ng-init="getBlogs()" >
+
+		<div class="body-wrapper">
+			<ul>
+				<li ng-repeat="(key,value) in Blogs" class="blog-list">
+					<h3><a href="#/blog/{{value._id['$oid']}}">{{value.title}}</a></h3>
+					<span style="color:#8E8E8E"><I>Contributed by {{value.contributer}} on {{value.createdate}}</I> </span>
+					<p class="lead">
+						{{value.short_description}}
+					</p>
+				</li>
+			</ul>
+
+		</li>
+		
+	</ul>
+</div>
+</div>
+<div class="footer ng-scope">
+	<p> From The Neev Innovative Team</p>
+</div>
+</div>

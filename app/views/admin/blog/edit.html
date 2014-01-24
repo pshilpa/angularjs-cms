@@ -1,0 +1,28 @@
+<div class="blog_container" >
+	<div class="form-container" >
+		<form id="add_blog" name="blogEdit" ng-submit="insertBlog(blogId)" novalidate>
+		<input type="submit" class="backend-button float-right" value="Save Blog"  ng-disabled="!blogEdit.$valid"/>	
+		</br>
+			<div class="block">
+				<label>Title</label><span>*</span>
+				<input type="text" name="title" ng-model="Blog.title" value="{{edit.title}}" required >
+			</div>
+			<div class="block">
+				<label>Contributer</label><span>*</span>
+				<input type="text" name="name" ng-model="Blog.contributer" value="{{edit.contributer}}" required >
+			</div>
+			<div class="block">
+				<label>Short Description</label><span>*</span>
+				<textarea name="short_description" ng-model="Blog.short_description" cols="50" rows="10" required  >{{edit.short_description}}</textarea>
+			</div>
+			<div class="block">
+				<label>Description</label><span>*</span>
+				<textarea name="description" cols="50" ng-model="Blog.description" rows="10" required  >{{edit.description}}</textarea>
+			</div>
+			<!-- <input type="hidden" name="update-date" ng-model="Blog.createdate"> -->
+
+			<div class="clear"></div>
+			
+		</form>
+	</div>
+</div>

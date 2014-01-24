@@ -1,0 +1,17 @@
+<div class="login-container form-container" ng-controller="AdminUserCtrl" >
+    <div class="login-form">
+    <div class="login-inner" name="login" data-ng-init="getUsers()">
+            <form name="login" ng-submit="logIn()" >
+                <div class="block">
+                    <label>Username</label><span>*</span>
+                    <input type="text" name="username" ng-model="User.username" placeholder="Enter Username" required>
+                </div>
+                <div class="block">
+                    <label>Password</label><span>*</span>
+                    <input type="password" name="password" ng-model="password"  placeholder="'Enter your password" required>
+                </div>
+                <input type="submit" class="backend-button" value="Login" ng-disabled="!login.$valid"/>
+            </form>
+        </div>
+    </div><div class="clear"></div>
+</div>

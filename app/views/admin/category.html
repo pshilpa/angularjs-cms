@@ -1,0 +1,36 @@
+<div class="backend-container"> 
+<div id="menu_wrapper" ng-init="menu_template_src = '/views/admin/includes/menu.html'" ng-include src="menu_template_src"></div>
+<!-- <div id="sub_menu_wrapper" ng-init="sub_menu_template_src = '/views/admin/includes/submenu.html'" ng-include src="sub_menu_template_src"  ></div> -->
+<div class="category_container" categories="categories" >
+	<div class="right-block"  >
+	<span class="backend-button float-right"  ng-click="toggleEditForm(null)">Add New Category</span>
+	<span class="backend-button float-right" ng-show="catId" ng-click="deleteCategory(catId)">Delete Category</span>
+		<div ng-hide="editCategory">{{status}}</div>
+		<div ng-show="editCategory" ng-init="edit_form_template_src = '/views/admin/category/edit.html'" ng-include src="edit_form_template_src"  ></div>
+	</div>
+	<div class="left-block"  data-ng-init="getCategories()">
+		<!-- <span class="backend-button"  ng-click="getCategoryTree()">Show All Categories</span> -->
+
+		<p><b><i>Click on Category to edit it.</i></b></p>
+		<ul>
+			<li ng-repeat="(key,value) in catTree">
+				<span ng-click="toggleEditForm(value._id['$oid'])">{{value.title}}</span>
+				<ul ng-if="value.child"><li ng-if="subkey=='child'" ng-repeat="(subkey,subvalue) in value">  
+					<span ng-if="subkey=='child'">       
+						<span ng-click="toggleEditForm(subvalue._id['$oid'])" >{{subvalue.title}}</span>
+					</span>
+
+				</li>
+			</ul>
+
+		</li>
+		
+	</ul>
+</div>
+<div class="clear"></div>
+
+</div>
+<div class="footer">
+ @From The Neev Innovative Team.
+</div>
+</div>

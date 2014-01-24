@@ -1,0 +1,340 @@
+body{
+ background: url("../images/background.jpg") repeat scroll 0 0 rgba(0, 0, 0, 0);color: #454545;
+}
+.float-right{float:right;}
+.container{
+ font: 100% 'Lucida Sans Unicode', 'Bitstream Vera Sans', 'Trebuchet Unicode MS', 'Lucida Grande', Verdana, Helvetica, sans-serif;
+}
+.frontend-container{
+  background: none repeat scroll 0 0 #FFFFFF;
+      margin: 20px auto;
+    width: 971px;
+}
+.backend-container{
+   background: url("../images/bk-background.jpg") repeat scroll 0 0 rgba(0, 0, 0, 0);color: #454545;
+margin: 10px auto;
+
+}
+
+.clear{clear:both}
+.left-block{float:left;  padding: 35px;width: 40%;
+span{ text-transform:capitalize;}
+}
+.right-block{float:right; width: 50%;padding:20px;
+ border-left: 1px solid #DDDDDD;
+ .backend-button {margin-left:20px}
+}
+
+ .browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+/*backend button*/
+.backend-button{
+border:1px solid #616261; -webkit-border-radius: 3px; -moz-border-radius: 3px;border-radius: 3px;font-size:16px;padding: 6px 15px; text-decoration:none; display:inline-block;text-shadow: -1px -1px 0 rgba(0,0,0,0.3);font-weight:bold; color: #FFFFFF;
+cursor:pointer;
+ background-color: #7d7e7d; background-image: -webkit-gradient(linear, left top, left bottom, from(#7d7e7d), to(#0e0e0e));
+ background-image: -webkit-linear-gradient(top, #7d7e7d, #0e0e0e);
+ background-image: -moz-linear-gradient(top, #7d7e7d, #0e0e0e);
+ background-image: -ms-linear-gradient(top, #7d7e7d, #0e0e0e);
+ background-image: -o-linear-gradient(top, #7d7e7d, #0e0e0e);
+ background-image: linear-gradient(to bottom, #7d7e7d, #0e0e0e);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#7d7e7d, endColorstr=#0e0e0e);
+}
+
+.backend-button:hover{
+ border:1px solid #4a4b4a;
+ background-color: #646464; background-image: -webkit-gradient(linear, left top, left bottom, from(#646464), to(#282828));
+ background-image: -webkit-linear-gradient(top, #646464, #282828);
+ background-image: -moz-linear-gradient(top, #646464, #282828);
+ background-image: -ms-linear-gradient(top, #646464, #282828);
+ background-image: -o-linear-gradient(top, #646464, #282828);
+ background-image: linear-gradient(to bottom, #646464, #282828);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#646464, endColorstr=#282828);
+}
+/**Login Form **/
+.login-container{  
+    margin: 0 auto;
+      padding: 75px;
+    width: 500px !important;
+    .login-form {
+    background: url("../images/loginbox_bg.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    height: 250px;
+    padding-top: 50px;
+    position: relative;
+    width: 500px;
+
+.login-inner {
+    color: #161616;
+    line-height: 20px;
+    margin: 0 auto;
+    width: 310px;
+}
+}
+    }
+/* Space out content a bit */
+.footer{ background: none repeat scroll 0 0 #EEEEFF;
+    padding-bottom: 10px;text-align: center;}
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+/*menu */
+#menu_wrapper{
+    width: 100%;
+    height: 50px;
+    background: #45484d; /* Old browsers */
+    background: -moz-linear-gradient(top,  #A6CBF1  0%, #000000 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#45484d), color-stop(100%,#000000)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #45484d 0%,#000000 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #A6CBF1  0%,#000000 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #A6CBF1  0%,#000000 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #A6CBF1  0%,#000000 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+}
+
+#menu_wrapper ul{
+    list-style: none;
+}
+
+#menu_wrapper ul li{
+    float: left;
+    margin-right: 25px;
+    margin-top: 10px;
+}
+
+#menu_wrapper ul li a{
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 22px;
+}
+
+#menu_wrapper ul li a:hover,
+#menu_wrapper ul li a.current{
+    color: #700;
+}
+
+#menu_wrapper ul li.logout{
+    color: #EEEEEE;
+    float: right;
+    margin-right: 25px;
+}
+
+#sub_menu_wrapper{
+   width: 100%;
+   height: 40px;
+   background: #a2a2a2;
+}
+
+#sub_menu_wrapper ul {
+    margin-left: 15px;
+    list-style: none;
+}
+
+#sub_menu_wrapper ul li{
+    float: left;
+    margin-right: 15px;
+    margin-top: 11px;
+
+}
+#sub_menu_wrapper ul li a{
+    padding: 5px;
+    text-decoration: none;
+}
+#sub_menu_wrapper ul li a:hover{
+    text-decoration: underline;
+}
+
+/*Category page*/
+
+  .form-container  {
+  width:500px;
+  .error-alert{color:red;}
+  .block { margin: 10px;
+  input{width:420px;height:25px}
+  label { display: inline-block; text-align: right; }
+  }
+  input[type="submit"]{
+  padding:9px;
+ }input[type="submit"]:disabled{
+color:#999;
+} 
+}
+
+/* Custom page header */
+.header {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    padding-bottom: 19px;
+}
+
+/* Custom page footer */
+.footer {
+    padding-top: 19px;
+    color: #777;
+    border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+    margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+/* Supporting marketing content */
+.marketing {
+    margin: 40px 0;
+}
+
+.marketing p + h4 {
+    margin-top: 28px;
+}
+.body-wrapper {
+        margin: 20px auto;
+    max-width: 850px;
+    }
+
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    .container {
+       /* max-width: 730px;*/
+    }
+
+    /* Remove the padding we set earlier */
+    .header,
+    .marketing,
+    .footer {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    /* Space out the masthead */
+    .header {
+        margin-bottom: 30px;
+    }
+    /* Remove the bottom border on the jumbotron for visual effect */
+    .jumbotron {
+        border-bottom: 0;
+    }
+}
+/*Blog listing page*/
+.blog-list{-webkit-border-radius: 20px;-moz-border-radius: 20px;border-radius: 20px;-webkit-box-shadow: #8A8A8A 16px 16px 16px;-moz-box-shadow: #8A8A8A 16px 16px 16px; box-shadow: #8A8A8A 16px 16px 16px;  list-style: none outside none;
+      margin: 25px 40px 20px 0;
+    padding: 15px;
+    a{text-decoration:none;
+    color:#333;}
+    }
+/*menu css frontend*/
+
+#cssmenu {
+  border: none;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+  text-transform: capitalize;
+  font-size: 17px;
+  font-weight: bold;
+  width: auto;
+ ul {
+  background: #333333;
+  height: 35px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+   .last{
+  float:right;
+  }
+}
+ li {
+  float: left;
+  padding: 0px;
+
+  :hover > a {
+  background: #666 url('/images/hover.png') bottom center no-repeat;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+ a {
+  background: #333333 url('/images/seperator.gif') bottom right no-repeat;
+  display: block;
+  font-weight: normal;
+  line-height: 35px;
+  margin: 0px;
+   color: #CCCCCC;
+  padding: 0px 25px;
+  text-align: center;
+  text-decoration: none;
+  :hover
+  {
+  background: #666 url('/images/hover.png') bottom center no-repeat;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+}
+}
+ li ul {
+  background: #333333;
+  display: none;
+  height: auto;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  position: absolute;
+  width: 225px;
+  z-index: 200;
+  /*top:1em;
+    /*left:0;*/
+
+}
+ li:hover ul {
+  display: block;
+}
+li li {
+  background: url('/images/sub_sep.gif') bottom left no-repeat;
+  display: block;
+  float: none;
+  margin: 0px;
+  padding: 0px;
+  width: 225px;
+}
+ li:hover li a {
+  background: none;
+} li ul a {
+  display: block;
+  height: 35px;
+  font-size: 12px;
+  font-style: normal;
+  margin: 0px;
+  padding: 0px 10px 0px 15px;
+  text-align: left;
+}
+ li ul a:hover,
+ li ul li:hover > a {
+  background: #666 url('/images/hover_sub.png') center left no-repeat;
+  border: 0px;
+  color: #ffffff;
+  text-decoration: none;
+}
+ p {
+  clear: left;
+}
+}

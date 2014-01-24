@@ -1,0 +1,25 @@
+<div class="form-container" >
+		<form id="add_user" name="userEdit" ng-submit="insertUser(userId)" novalidate>
+		<input type="submit" class="backend-button float-right" value="Save User" ng-disabled="!userEdit.$valid" />	</br>
+			<div class="block">
+				<label>User Name</label><span>*</span>
+				<input type="text" name="username" ng-model="User.username" required>
+			</div>
+			<div class="block">
+				<label>Email</label><span>*</span>
+				<input type="text" name="email" ng-model="User.email" required ng-pattern="/^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/" >
+				<p class="error-alert" ng-show="userEdit.email.$error.pattern">Valid email address, please.</p>
+			</div>
+			<div class="block">
+				<label>Password</label><span>*</span>
+				<input type="password" name="password" ng-model="User.password" required>
+			</div>
+			<div class="block">
+				<label>Confirm Password</label><span>*</span>
+				<input type="password" name="password-confirm" ng-model="User.passwordconfirm" required>
+			</div>
+			<input type="hidden" name="super-user" ng-model="User.superuser" value="true">
+			<div class="clear"></div>
+			
+		</form>
+	</div>

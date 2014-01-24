@@ -1,0 +1,34 @@
+<div class="category_container" >
+	<div class="form-container" >
+		<form id="add_category"  name="categoryEdit" ng-submit="insertCategory(catId)" novalidate> 
+		<input type="submit" class="backend-button float-right" value="Save Category"  ng-disabled="!categoryEdit.$valid"/></br>
+			<div class="block">
+				<label>Title</label><span>*</span>
+				<input type="text" name="title" ng-model="category.title" required ng-pattern="/^(\D)+$/" />
+     			 <p class="error-alert" ng-show="categoryEdit.title.$error.pattern">Text only, please.</p>
+			</div>
+			<div class="block">
+				<label>Short description</label><span>*</span>
+				<textarea name="short_description" required ng-model="category.short_description" cols="50" rows="10">{{edit.short_description}}</textarea>
+			</div>
+			<div class="block">
+				<label>Tags</label>
+				<textarea name="tags" cols="50" ng-model="category.tags" rows="10">{{edit.tags}}</textarea>
+			</div>
+			<div class="block">
+				<label>Select category</label>
+				<select name="parent_category" ng-model="category.parent_category">
+					<option value="">Select</option>
+					<option  ng-repeat="item in categories" value="{{item._id['$oid']}}"  selected="{{item.selected}}">{{item.title}}</option>
+				</select>
+			</div>
+			<div class="clear"></div>
+				
+		</form>
+	</div>
+</div>
+
+
+
+
+

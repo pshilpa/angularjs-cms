@@ -1,0 +1,19 @@
+<div class="frontend-container"> 
+
+<div class="header">
+  <div  ng-init="menu_template_src = '/views/includes/menu.html'" ng-include src="menu_template_src"></div>
+</div>
+
+<div data-ng-init="getCurrentCategory()">
+
+<div class="body-wrapper">
+  <h1>{{currentCategory.title}}</h1>
+  <p class="lead">
+   {{currentCategory.short_description}}
+  </p>
+</div>
+</div>
+<div class="footer ng-scope">
+  <p> From The Neev Innovative Team</p>
+</div>
+</div>
